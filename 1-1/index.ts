@@ -1,27 +1,11 @@
-interface RandomGenerator {
-    generate(): number;
-}
-
-class RandomGeneratorImpl {
-    generate(): number {
-        return Math.random()
-    }
-}
-
-class Job {
-    private randomGenerator: RandomGenerator;
-
-    constructor(randomGenerator: RandomGenerator ) {
-        this.randomGenerator = randomGenerator;
-    }
-
+// ①メイン処理モジュール
+class Main {
     execute() {
-        const r = this.randomGenerator.generate()
+        const r = Math.random()
         console.log(`Generated: ${r}`)
     }
 }
 
-
-const randomGenerator = new RandomGeneratorImpl()
-const job = new Job(randomGenerator)
-job.execute()
+// ⑥メイン処理モジュールをインスタンス化して実行します
+const main = new Main()
+main.execute()
