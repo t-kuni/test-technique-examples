@@ -1,0 +1,16 @@
+{
+  "name": "examples",
+  "version": "1.0.0",
+  "main": "index.js",
+  "private": true,
+  "workspaces": [
+    "1"
+  ],
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "typescript": "^5.6.3"
+  }
+}
