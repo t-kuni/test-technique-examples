@@ -1,0 +1,3 @@
+knowledge:
+  - path: package.json
+    kind: dependencies

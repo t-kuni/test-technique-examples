@@ -1,1 +1,16 @@
-DIなしパターン
+# DIなしパターン
+
+実装： [code](./index.ts)
+
+## 実行方法
+
+```
+npm --prefix ../ install
+npm start
+```
+
+## テスト実行方法
+
+```
+npm test
+```

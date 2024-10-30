@@ -1,17 +1,17 @@
 // ①乱数生成ジュールのインタフェース
-interface RandomGenerator {
+export interface RandomGenerator {
     generate(): number;
 }
 
 // ②乱数生成モジュールの実装
-class RandomGeneratorImpl {
+export class RandomGeneratorImpl {
     generate(): number {
         return Math.random()
     }
 }
 
 // ③メイン処理モジュール
-class Main {
+export class Main {
     private randomGenerator: RandomGenerator;
 
     //
@@ -28,6 +28,7 @@ class Main {
 }
 
 // ⑥メイン処理モジュールをインスタンス化して実行します
+// このとき、乱数生成モジュールの実装を渡します
 const randomGenerator = new RandomGeneratorImpl()
 const main = new Main(randomGenerator)
 main.execute()
