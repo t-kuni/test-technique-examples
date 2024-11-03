@@ -1,4 +1,7 @@
 {
+  "prisma": {
+    "seed": "ts-node prisma/seed.ts"
+  },
   "scripts": {
     "build": "tsc",
     "start": "npm run build && node dist/index.js",

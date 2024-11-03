@@ -1,0 +1,5 @@
+knowledge:
+  - path: prisma/schema.prisma
+    kind: implementations
+  - path: prisma/seed.ts
+    kind: implementations
