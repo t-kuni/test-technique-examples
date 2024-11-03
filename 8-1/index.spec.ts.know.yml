@@ -3,3 +3,5 @@ knowledge:
     kind: implementations
   - path: tsconfig.json
     kind: implementations
+  - path: "@/1-2/index.spec.ts"
+    kind: examples

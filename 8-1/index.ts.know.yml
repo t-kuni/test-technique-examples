@@ -1,0 +1,7 @@
+knowledge:
+    - path: "@/8-1/prisma/schema.prisma"
+      kind: implementations
+    - path: "@/8-1/init.sql"
+      kind: implementations
+    - path: "@/3-1/index.ts"
+      kind: examples
