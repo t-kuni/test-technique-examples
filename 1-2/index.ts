@@ -27,8 +27,10 @@ export class Main {
     }
 }
 
-// ⑥メイン処理モジュールをインスタンス化して実行します
-// このとき、乱数生成モジュールの実装を渡します
-const randomGenerator = new RandomGeneratorImpl()
-const main = new Main(randomGenerator)
-main.execute()
+if (require.main === module) {
+    // ⑥メイン処理モジュールをインスタンス化して実行します
+    // このとき、乱数生成モジュールの実装を渡します
+    const randomGenerator = new RandomGeneratorImpl()
+    const main = new Main(randomGenerator)
+    main.execute()
+}

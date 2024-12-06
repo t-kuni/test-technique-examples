@@ -21,7 +21,8 @@ class Main {
     }
 }
 
-
-const randomGenerator = new RandomGeneratorImpl()
-const main = new Main(randomGenerator)
-main.execute()
+if (require.main === module) {
+    const randomGenerator = new RandomGeneratorImpl()
+    const main = new Main(randomGenerator)
+    main.execute()
+}

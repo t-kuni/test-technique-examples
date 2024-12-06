@@ -1,0 +1,5 @@
+knowledge:
+  - path: index.ts
+    kind: implementations
+  - path: tsconfig.json
+    kind: implementations

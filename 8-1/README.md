@@ -1,7 +1,7 @@
 # DIありパターン
 
 実装： [code](./index.ts)
-テストコード： [code](./index.spwc.ts)
+テストコード： [code](./index.spec.ts)
 
 ## 実行方法
 
