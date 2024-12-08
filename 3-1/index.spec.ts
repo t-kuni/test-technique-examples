@@ -1,15 +1,10 @@
-import { jest, describe, it } from '@jest/globals';
+import {jest, describe, it, expect} from '@jest/globals';
+import {Main} from "./index";
 
 describe('Main', () => {
     it('execute()', () => {
-        // ⑦ 乱数生成モジュールのモックを作成します
-        const mockRandomGenerator: RandomGenerator = {
-            generate: jest.fn().mockReturnValue(0.5)
-        } as RandomGenerator;
-
-        // ８ メイン処理モジュールをインスタンス化して実行します
-        // このとき、乱数生成モジュールのモックを渡します
-        const main = new Main(mockRandomGenerator);
-        main.execute();
+        const main = new Main();
+        const actual = main.execute();
+        expect(actual).toBe(10);
     });
 });

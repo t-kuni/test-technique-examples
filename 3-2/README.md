@@ -1,4 +1,4 @@
-# 乱数生成（修正前）
+# 乱数生成（修正後）
 
 実装： [code](./index.ts)
 テストコード： [code](./index.spec.ts)
