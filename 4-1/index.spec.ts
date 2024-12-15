@@ -4,7 +4,7 @@ import {Main, Timer} from "./index";
 describe('Main#execute()', () => {
     it('翌日の日付が取得できること', () => {
         const mockTimer: Timer = {
-            now: jest.fn().mockReturnValue(new Date(2024, 5, 20, 12, 30, 0))
+            now: jest.fn().mockReturnValue(new Date(2024, 4, 20, 12, 30, 0))
         } as Timer;
 
         const main = new Main(mockTimer);
