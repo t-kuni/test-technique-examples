@@ -7,7 +7,7 @@
 
 ```
 npm --prefix ../ install
-npm start
+APP_NAME=app LOG_LEVEL=info npm start
 ```
 
 ## テスト実行方法
